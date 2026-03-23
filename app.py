@@ -4,7 +4,7 @@ import os
 
 app = Flask(__name__)
 
-app.config['MYSQL_HOST'] = 'mysql.railway.internal'
+app.config['MYSQL_HOST'] = 'centerbeam.proxy.rlwy.net'
 app.config['MYSQL_USER'] = 'root'
 app.config['MYSQL_PASSWORD'] = 'ErhrLqbGSaPOxBCRDyKHwbtUaLgudnfm'
 app.config['MYSQL_DB'] = 'railway'
