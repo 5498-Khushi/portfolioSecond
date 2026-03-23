@@ -8,7 +8,7 @@ app.config['MYSQL_HOST'] = 'centerbeam.proxy.rlwy.net'
 app.config['MYSQL_USER'] = 'root'
 app.config['MYSQL_PASSWORD'] = 'ErhrLqbGSaPOxBCRDyKHwbtUaLgudnfm'
 app.config['MYSQL_DB'] = 'railway'
-app.config['MYSQL_PORT'] = 3306
+app.config['MYSQL_PORT'] =49603
 
 mysql = MySQL(app)
 
