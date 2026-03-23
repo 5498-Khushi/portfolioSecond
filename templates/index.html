@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Portfolio</title>
+    
+    <link rel="stylesheet" href="/static/style.css">
+    
+</head>
+
+
+<body>
+    <nav>
+        <div class="left">
+            <img src="/static/finalIcon.png">
+            KHUSHI
+        </div>
+
+        <div class="right">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#About">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#certifications">Certifications</a></li>
+            </ul>
+
+        </div>
+    </nav>
+    <section id="home">
+        <div class="myDetail">
+            <div class="leftsection">
+                <h2>Hello, It's Me </h2>
+                <h1><u>Khushi Maurya</u>
+                </h1>
+                <p>I’m a fresher passionate about exploring new technologies and building real-world projects to grow my
+                    skills. I am eager to learn continuously, take on new challenges and develop practical solutions
+                    that create meaningful impact. </p>
+                <a href="#contact"><button>Contact Me</button></a>
+            </div>
+            <div class="rightsection">
+                <img src="/static/profileLogo.jpg">
+            </div>
+        </div>
+    </section>
+    <hr>
+    <section id="About">
+        <div class="about">
+            <div class="Aleft">
+                <img src="/static/image.png">
+            </div>
+            <div class="aboutmecontent">
+                <h1>About Me</h1>
+                <h2>Aspiring Developer</h2>
+                <p>I am a fresher who is passionate about learning and exploring new technologies in the field of
+                    development and electronics. I am eager to gain practical experience, build innovative projects and
+                    improve my technical as well as problem-solving skills. I am highly motivated to grow, adapt to new
+                    challenges and contribute positively while starting my professional journey.</p>
+                <a href="#contact"><button>More About Me</button></a>
+            </div>
+        </div>
+
+    </section>
+    <hr>
+    <section id="skills">
+        <div class="mainskill">
+            <div class="Sleft">
+                <h1>My Skills</h1>
+            </div>
+            <div class="myskills">
+                <div class="skill1">
+                    <img src="/static/html.png">
+                    <h2>HTML</h2>
+                    <p>As a beginner, learning HTML is my first step into web development, and I am confident in
+                        creating well-structured and semantic web pages./p>
+                </div>
+                <div class="skill1">
+                    <img src="/static/css.png">
+                    <h2>CSS</h2>
+                    <p>I have a beginner to intermediate understanding of CSS and can design responsive layouts, apply
+                        styling, and create basic hover and transition effects.</p>
+                </div>
+                <div class="skill1">
+                    <img src="/static/python.png">
+                    <h2>PYTHON</h2>
+                    <p>I have an intermediate level understanding of Python and can write logical programs, work with
+                        basic libraries, and build small practical projects.</p>
+                </div>
+            </div>
+            <div class="myskill">
+                <div class="skill1">
+                    <img src="/static/sql.png">
+                    <h2>MY SQL</h2>
+                    <p>I have a strong understanding of SQL and can confidently write queries for data retrieval,
+                        filtering, joins, and basic database operations.</p>
+                </div>
+                <div class="skill1">
+                    <img src="/static/hacker.png">
+                    <h2>HACKER-RANK</h2>
+                    <p>I have earned a Bronze badge in Problem Solving and a Gold badge in Python on HackerRank,
+                        reflecting my consistent practice and improvement in coding skills.</p>
+                </div>
+                <div class="skill1">
+                    <img src="/static/flask.png">
+                    <h2>FLASK</h2>
+                    <p>I am a beginner in Flask and currently learning to build simple backend applications and
+                        understand web framework fundamentals.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <hr>
+    <section id="certifications">
+        <div class="maincertificate">
+            <div class="certheading">
+                <h1>My Certifications</h1>
+            </div>
+            <div id="cert-container"></div>
+            <div id="modal">
+                <div class="popup-box">
+                    <div class="popup-header">
+                        <span class="close-btn" onclick="closeCertModal()">✖</span>
+                    </div>
+                    <img id="modalImg">
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <hr>
+    <section id="contact">
+    <div class="maincontact">
+        <div class="contact-info">
+            <h1>Contact Me</h1>
+            <h3>Let's Work Together</h3>
+            <p>I am always open to new opportunities and meaningful conversations. Feel free to connect with me using the contact form.</p>
+            
+            <div class="contact-details">
+                <div class="contact-item">
+                    <span><img src="/static/gmail.png"></span>
+                    <span>khushimaurya5498@gmail.com</span>
+                </div>
+                <div class="contact-item">
+                    <span><img src="/static/phone.png"></span>
+                    <span>+91 9004890088</span>
+                </div>
+            </div>
+            
+            <div class="social-icons">
+                <a href="#"><img src="/static/insta.png"></a>
+                <a href="#"><img src="/static/git.png"></a>
+                <a href="#"><img src="/static/linkdin.png"></a>
+            </div>
+        </div>
+        
+        <div class="contact-form">
+            <div class="form-group">
+                <h3>Enter Name:</h3>
+                <input type="text" id="contactName" placeholder="Your Full Name">
+            </div>
+            <div class="form-group">
+                <h3>Enter Email:</h3>
+                <input type="email" id="contactEmail" placeholder="your.email@example.com">
+            </div>
+            <div class="form-group">
+                <h3>Enter Message:</h3>
+                <textarea id="contactMessage" rows="5" placeholder="Your message here..."></textarea>
+            </div>
+            <button onclick="sendMessage()" id="sendBtn">Send Message</button>
+            <div id="messageStatus" style="margin-top: 10px;"></div>
+        </div>
+    </div>
+    <!-- Success Modal -->
+    <div id="successModal" class="modal1">
+        <div class="modal-content">
+            <div class="modal-icon">✅</div>
+            <h2>Message Sent!</h2>
+            <p>Thank you for reaching out. I'll get back to you soon.</p>
+            <button onclick="closeModal()">OK</button>
+        </div>
+    </div>
+</section>
+    <script src="/static/script.js"></script>
+</body>
+
+</html>
