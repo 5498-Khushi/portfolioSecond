@@ -4,9 +4,9 @@ import os
 
 app = Flask(__name__)
 
-app.config['MYSQL_HOST'] = os.environ.get('${{RAILWAY_PRIVATE_DOMAIN}}')
+app.config['MYSQL_HOST'] = os.environ.get('mysql.railway.internal')
 app.config['MYSQL_USER'] = os.environ.get('root')
-app.config['MYSQL_PASSWORD'] = os.environ.get('${{MYSQL_ROOT_PASSWORD}}')
+app.config['MYSQL_PASSWORD'] = os.environ.get('ErhrLqbGSaPOxBCRDyKHwbtUaLgudnfm')
 app.config['MYSQL_DB'] = os.environ.get('railway')
 app.config['MYSQL_PORT'] = int(os.environ.get('MYSQLPORT', 3306))
 
